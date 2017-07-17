@@ -1,1 +1,360 @@
-hello world
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="css/site.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/js/uikit-icons.min.js"></script>
+  <body>
+    <div class="uk-offcanvas-content">
+      <nav class="uk-navbar-container" uk-navbar uk-sticky="top:100; animation: uk-animation-slide-top">
+        <div class="uk-navbar-right">
+          <ul class="uk-navbar-nav">
+            <li class="uk-visible@s"><a href="#home" uk-scroll>Home</a></li>
+            <li class="uk-visible@s"><a href="#venue" uk-scroll>Venue</a></li>
+            <li class="uk-visible@s"><a href="#schedule" uk-scroll>Schedule</a></li>
+            <li class="uk-visible@s"><a href="#registry" uk-scroll>Registry</a></li>
+            <div class="uk-navbar-item uk-visible@s">
+              <a class="uk-button uk-button-primary" href="#rsvp" uk-scroll>RSVP</a>
+            </div>
+            <a class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon href="#offcanvas-nav" uk-toggle></a>
+          </ul>
+        </div>
+      </nav>
+      <div class="hero-container">
+        <div id="home" class="uk-cover-container" uk-parallax="blur: 2px" uk-height-viewport>
+          <img src="images/1.jpg" uk-cover>
+        </div>
+        <div class="hero-overlay-top uk-position-top uk-overlay uk-light">
+          <h1 class="uk-heading-hero uk-margin-remove-bottom">Sangeeta &amp; Dan</h1>
+          <h1 class="uk-heading-primary uk-margin-remove-top">December 2, 2017</h1>
+        </div>
+        <div class="hero-overlay-bottom uk-overlay uk-position-bottom uk-position-center"><a class="uk-button uk-button-primary uk-button-large" href="#rsvp" uk-scroll>RSVP Now</a></div>
+      </div>
+      <div class="uk-section" id="venue">
+        <div class="uk-container">
+          <h1 class="uk-text-center uk-heading-primary">The Venue</h1>
+          <div uk-grid class="uk-grid-match">
+            <div class="uk-width-1-3@m">
+              <div uk-grid>
+                <div class="uk-width-1-1">
+                  <div class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls:uk-animation-slide-left-medium; repeat: true">
+                    <h3 class="uk-card-title">Lambertville Station Inn</h3>
+                    <p>
+                      11 Bridge Street<br/>
+                      Lambertville, NJ 08530
+                    </p>
+                    <hr>
+                    <a href="https://www.google.com/maps/place/Lambertville+Station+Restaurant+and+Inn/@40.365237,-74.948328,17z/data=!4m12!1m6!3m5!1s0x89c3ff499283fa6f:0x180a672495c0f77b!2sLambertville+Station+Restaurant+and+Inn!8m2!3d40.365237!4d-74.946134!3m4!1s0x89c3ff499283fa6f:0x180a672495c0f77b!8m2!3d40.365237!4d-74.946134" target="_blank">Google Map</a>
+                  </div>
+                </div>
+                <div class="uk-width-1-1">
+                  <div class="uk-card uk-card-primary uk-card-body" uk-scrollspy="cls:uk-animation-slide-left-medium; repeat: true">
+                    <h3 class="uk-card-title">For reservations</h3>
+                    <p>
+                      Please call the inn at <strong>(609) 397-4400</strong>
+                      and let them know you are coming for the Ahmed-Felicetta wedding.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="uk-width-2-3@m">
+              <div class="no-overflow uk-border-rounded uk-box-shadow-small">
+                <img src="/images/lambertville.jpg" uk-scrollspy="cls:uk-animation-kenburns; repeat: true">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="uk-container">
+        <hr class="uk-divider-icon">
+      </div>
+      <div class="uk-section" id="schedule">
+        <div class="uk-container">
+          <h1 class="uk-text-center uk-heading-primary">Schedule of Events</h1>
+          <div uk-grid>
+            <div class="uk-width-1-1">
+              <div uk-grid class="uk-grid-match">
+                <div class="uk-width-1-2@m">
+                  <div class="uk-card uk-card-default" uk-scrollspy="cls:uk-animation-slide-left-medium; repeat: true">
+                    <div class="uk-card-header">
+                      <div class="uk-grid-small uk-flex-middle" uk-grid>
+                        <div class="uk-width-auto timeline-icon">
+                          <svg x="0px" y="0px" viewBox="0 0 496 496" xml:space="preserve">
+                            <g>
+                              <path d="M248,227.312l69.376-69.376c6.848-6.848,10.624-15.96,10.624-25.656C328,112.272,311.728,96,291.72,96
+                                  c-9.696,0-18.8,3.776-25.656,10.624L248,124.688l-18.064-18.064C223.088,99.776,213.976,96,204.28,96
+                                  C184.272,96,168,112.272,168,132.28c0,9.696,3.776,18.808,10.624,25.656L248,227.312z M204.28,112
+                                  c5.424,0,10.512,2.112,14.344,5.936L248,147.312l29.376-29.376c3.824-3.824,8.92-5.936,14.344-5.936
+                                  c11.176,0,20.28,9.104,20.28,20.28c0,5.424-2.112,10.512-5.936,14.344L248,204.688l-58.064-58.064
+                                  c-3.824-3.824-5.936-8.92-5.936-14.344C184,121.104,193.104,112,204.28,112z"/>
+                              <path d="M176,256c-57.344,0-104,46.656-104,104s46.656,104,104,104s104-46.656,104-104S233.344,256,176,256z M176,448
+                                  c-48.52,0-88-39.48-88-88c0-48.52,39.48-88,88-88c12.36,0,24.128,2.592,34.808,7.208C193.496,302.568,184,330.864,184,360
+                                  s9.496,57.432,26.808,80.792C200.128,445.408,188.36,448,176,448z M225.048,433.024C208.912,412.08,200,386.44,200,360
+                                  s8.912-52.08,25.048-73.024c4.432,2.984,8.544,6.384,12.352,10.104C223.592,315.176,216,337.224,216,360s7.592,44.824,21.4,62.92
+                                  C233.592,426.64,229.472,430.04,225.048,433.024z M248.04,410.392C237.672,395.632,232,378.088,232,360
+                                  s5.672-35.632,16.04-50.392C258.064,323.904,264,341.256,264,360C264,378.744,258.064,396.096,248.04,410.392z"/>
+                              <path d="M320,224c-25.68,0-50.456,7.232-72.072,20.792C227.032,231.696,202.424,224,176,224c-74.992,0-136,61.008-136,136
+                                  s61.008,136,136,136c26.424,0,51.032-7.696,71.928-20.792C269.544,488.768,294.32,496,320,496c74.992,0,136-61.008,136-136
+                                  S394.992,224,320,224z M176,480c-66.176,0-120-53.832-120-120s53.824-120,120-120c66.168,0,120,53.832,120,120
+                                  S242.168,480,176,480z M285.224,279.312C296.2,274.576,308.032,272,320,272c48.52,0,88,39.48,88,88c0,48.52-39.48,88-88,88
+                                  c-11.968,0-23.8-2.576-34.776-7.312C301.968,418.08,312,390.224,312,360S301.968,301.92,285.224,279.312z M320,480
+                                  c-20.392,0-40.144-5.16-57.792-14.904c4.424-3.64,8.536-7.624,12.472-11.784C288.8,460.192,304.288,464,320,464
+                                  c57.344,0,104-46.656,104-104s-46.656-104-104-104c-15.712,0-31.2,3.808-45.328,10.688c-3.936-4.16-8.04-8.144-12.472-11.784
+                                  C279.856,245.16,299.608,240,320,240c66.168,0,120,53.832,120,120S386.168,480,320,480z"/>
+                              <rect x="376" y="48" width="16" height="16"/>
+                              <rect x="200" y="64" width="16" height="16"/>
+                              <rect x="88" y="192" width="16" height="16"/>
+                              <rect x="328" width="16" height="16"/>
+                              <rect x="328" y="32" width="16" height="16"/>
+                              <rect x="344" y="16" width="16" height="16"/>
+                              <rect x="312" y="16" width="16" height="16"/>
+                              <rect x="56" width="16" height="32"/>
+                              <rect x="14.059" y="22.056" transform="matrix(0.7071 0.7071 -0.7071 0.7071 30.0569 -12.4516)" width="32" height="16"/>
+                              <rect y="56" width="32" height="16"/>
+                              <rect x="14.055" y="89.948" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -60.4567 49.9399)" width="32" height="16"/>
+                              <rect x="56" y="96" width="16" height="32"/>
+                              <rect x="89.94" y="81.938" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -40.5668 97.9394)" width="16" height="32"/>
+                              <rect x="96" y="56" width="32" height="16"/>
+                              <rect x="89.937" y="14.058" transform="matrix(0.7071 0.7071 -0.7071 0.7071 49.9393 -60.4479)" width="16" height="32"/>
+                              <rect x="424" y="96" width="16" height="32"/>
+                              <rect x="390.073" y="110.061" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 768.6919 -66.281)" width="16" height="32"/>
+                              <rect x="368" y="152" width="32" height="16"/>
+                              <rect x="390.036" y="177.896" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 542.3849 612.454)" width="16" height="32"/>
+                              <rect x="424" y="192" width="16" height="32"/>
+                              <rect x="449.911" y="185.909" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 658.2447 660.4715)" width="32" height="16"/>
+                              <rect x="464" y="152" width="32" height="16"/>
+                              <rect x="457.924" y="110.074" transform="matrix(0.7071 0.7071 -0.7071 0.7071 225.6138 -292.5316)" width="16" height="32"/>
+                            </g>
+                          </svg>
+                        </div>
+                        <div class="uk-width-expand">
+                          <h3 class="uk-card-title uk-margin-remove-bottom">6:30PM</h3>
+                          <p class="uk-text-meta uk-margin-remove-top">Ceremony</time></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="uk-card-body">
+                      <p>The ceremony will be held at the Lambertville Station Inn.<br/>Please arrive 15 minutes early.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="uk-width-1-2@m">
+                  <div class="uk-card uk-card-default" uk-scrollspy="cls:uk-animation-slide-right-medium; repeat: true">
+                    <div class="uk-card-header">
+                      <div class="uk-grid-small uk-flex-middle" uk-grid>
+                        <div class="uk-width-auto timeline-icon">
+                          <svg x="0px" y="0px" viewBox="0 0 496 496">
+                            <g>
+                              <rect x="352" y="128" width="16" height="16"/>
+                              <rect x="480" y="32" width="16" height="16"/>
+                              <rect x="112" y="152" width="16" height="16"/>
+                              <rect x="144" y="16" width="16" height="16"/>
+                              <rect x="416" y="280" width="16" height="16"/>
+                              <rect x="240" y="296" width="16" height="16"/>
+                              <rect x="384" width="16" height="16"/>
+                              <rect x="16" y="280" width="16" height="16"/>
+                              <rect x="16" y="312" width="16" height="16"/>
+                              <rect x="32" y="296" width="16" height="16"/>
+                              <rect y="296" width="16" height="16"/>
+                              <rect x="464" y="168" width="16" height="16"/>
+                              <rect x="464" y="200" width="16" height="16"/>
+                              <rect x="480" y="184" width="16" height="16"/>
+                              <rect x="448" y="184" width="16" height="16"/>
+                              <rect x="16" width="16" height="16"/>
+                              <rect x="16" y="32" width="16" height="16"/>
+                              <rect x="32" y="16" width="16" height="16"/>
+                              <rect y="16" width="16" height="16"/>
+                              <rect x="256" width="16" height="16"/>
+                              <rect x="256" y="32" width="16" height="16"/>
+                              <rect x="272" y="16" width="16" height="16"/>
+                              <rect x="240" y="16" width="16" height="16"/>
+                              <path d="M489.816,344H368h-32v-52.96L409.816,208H288h-32v-52.96L329.816,72H166.184L240,155.04V208h-32H86.184L160,291.04V344
+                                  h-32H6.184L80,427.04V480H48v16h80v-16H96v-52.96L155.592,360h24.816L240,427.04V480h-32v16h80v-16h-32v-52.96L315.592,360
+                                  h24.816L400,427.04V480h-32v16h80v-16h-32v-52.96L489.816,344z M88,411.96L41.816,360H128h6.184L88,411.96z M201.816,88h92.368
+                                  L248,139.96L201.816,88z M121.816,224H208h6.184L168,275.96L121.816,224z M248,411.96L201.816,360H208h80h6.184L248,411.96z
+                                   M320,344h-32h-80h-32v-52.96L235.592,224h24.816L320,291.04V344z M281.816,224H288h86.184L328,275.96L281.816,224z M408,411.96
+                                  L361.816,360H368h86.184L408,411.96z"/>
+                            </g>
+                          </svg>
+                        </div>
+                        <div class="uk-width-expand">
+                          <h3 class="uk-card-title uk-margin-remove-bottom">7:00PM</h3>
+                          <p class="uk-text-meta uk-margin-remove-top">Cocktail Hour</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="uk-card-body">
+                      <p>Enjoy cocktails, hours d'oeuvres, and live entertainment as you take in the vistas of the Delaware River.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="uk-width-1-1">
+              <div uk-grid class="uk-grid-match">
+                <div class="uk-width-1-2@m">
+                  <div class="uk-card uk-card-default" uk-scrollspy="cls:uk-animation-slide-left-medium; repeat: true">
+                    <div class="uk-card-header">
+                      <div class="uk-grid-small uk-flex-middle" uk-grid>
+                        <div class="uk-width-auto timeline-icon">
+                          <svg x="0px" y="0px" viewBox="0 0 496 496">
+                            <g>
+                              <path d="M392,144C392,64.6,327.4,0,248,0S104,64.6,104,144s64.6,144,144,144S392,223.4,392,144z M248,272
+                                  c-70.576,0-128-57.424-128-128S177.424,16,248,16s128,57.424,128,128S318.576,272,248,272z"/>
+                              <path d="M248,32c-61.76,0-112,50.24-112,112s50.24,112,112,112s112-50.24,112-112S309.76,32,248,32z M248,240
+                                  c-52.936,0-96-43.064-96-96c0-52.936,43.064-96,96-96c52.936,0,96,43.064,96,96C344,196.936,300.936,240,248,240z"/>
+                              <path d="M48,304v-64h32v-16H48V103.192C66.232,99.472,80,83.32,80,64V48V32V0H64v32H48V0H32v32H16V0H0v32v16v16
+                                  c0,19.312,13.768,35.472,32,39.192V224H0v16h32v64H48z M16,64V48h16h16h16v16c0,13.232-10.768,24-24,24S16,77.232,16,64z"/>
+                              <path d="M496,64V40c0-22.056-17.944-40-40-40c-22.056,0-40,17.944-40,40v24c0,19.312,13.768,35.472,32,39.192V224h-32v16h32v64
+                                  h16v-64h32v-16h-32V103.192C482.232,99.472,496,83.312,496,64z M456,88c-13.232,0-24-10.768-24-24V40c0-13.232,10.768-24,24-24
+                                  s24,10.768,24,24v24C480,77.232,469.232,88,456,88z"/>
+                              <polygon points="160,304 136,304 136,280 88,280 88,304 64,304 64,320 40,320 40,386.216 64,426.216 64,496 80,496 80,421.784
+                                  56,381.784 56,336 80,336 80,320 104,320 104,296 120,296 120,320 144,320 144,336 144,352 144,368 160,368 160,352 168,352
+                                  168,388.688 128,428.688 128,496 144,496 144,435.312 184,395.312 184,336 160,336             "/>
+                              <polygon points="432,304 408,304 408,280 360,280 360,304 336,304 336,336 312,336 312,395.312 352,435.312 352,496 368,496
+                                  368,428.688 328,388.688 328,352 336,352 336,368 352,368 352,352 352,336 352,320 376,320 376,296 392,296 392,320 416,320
+                                  416,336 440,336 440,381.784 416,421.784 416,496 432,496 432,426.216 456,386.216 456,320 432,320             "/>
+                              <path d="M280.4,80c-12.128,0-23.56,4.512-32.4,12.736C239.16,84.512,227.728,80,215.6,80c-26.248,0-47.6,21.352-47.6,47.6
+                                  c0,12.712,4.952,24.664,13.944,33.656L248,227.312l66.056-66.056C323.048,152.264,328,140.312,328,127.6
+                                  C328,101.352,306.648,80,280.4,80z M302.744,149.944L248,204.688l-54.744-54.744C187.288,143.976,184,136.04,184,127.6
+                                  c0-17.424,14.176-31.6,31.6-31.6c8.44,0,16.376,3.288,22.344,9.256L248,115.312l10.056-10.056C264.024,99.288,271.96,96,280.4,96
+                                  c17.424,0,31.6,14.184,31.6,31.6C312,136.04,308.712,143.976,302.744,149.944z"/>
+                            </g>
+                          </svg>
+                        </div>
+                        <div class="uk-width-expand">
+                          <h3 class="uk-card-title uk-margin-remove-bottom">8:00PM</h3>
+                          <p class="uk-text-meta uk-margin-remove-top">Dinner &amp; Dancing</time></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="uk-card-body">
+                      <p>Join us for dinner and dancing at the Riverside Ballroom.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="uk-width-1-2@m">
+                  <div class="uk-card uk-card-default" uk-scrollspy="cls:uk-animation-slide-right-medium; repeat: true">
+                    <div class="uk-card-header">
+                      <div class="uk-grid-small uk-flex-middle" uk-grid>
+                        <div class="uk-width-auto timeline-icon">
+                          <svg x="0px" y="0px" viewBox="0 0 496 496">
+                            <g>
+                              <path d="M376,341.831c-26.472,0-48,21.528-48,48s21.528,48,48,48s48-21.528,48-48S402.472,341.831,376,341.831z M376,421.831
+                                  c-17.648,0-32-14.352-32-32s14.352-32,32-32s32,14.352,32,32S393.648,421.831,376,421.831z"/>
+                              <path d="M144,341.831c-26.472,0-48,21.528-48,48s21.528,48,48,48s48-21.528,48-48S170.472,341.831,144,341.831z M144,421.831
+                                  c-17.648,0-32-14.352-32-32s14.352-32,32-32s32,14.352,32,32S161.648,421.831,144,421.831z"/>
+                              <path d="M496,149.831v-24c0-13.232-10.768-24-24-24h-64c-13.232,0-24,10.768-24,24v24h24v32h-18.328L360,200.711v-14.88
+                                  c0-15.44-12.56-28-28-28s-28,12.56-28,28v43.208c-17.976,5.736-36.784,8.792-55.888,8.792c-6.416,0-12.776-0.432-19.104-1.088
+                                  l37.664-81.608l5.064,3.528c5.432,3.784,11.752,5.76,18.232,5.76c1.888,0,3.792-0.168,5.688-0.504
+                                  c8.416-1.504,15.736-6.192,20.632-13.2c10.088-14.48,6.52-34.464-7.952-44.552l-26.248-18.304
+                                  c-14.488-10.112-34.472-6.512-44.552,7.952c-10.088,14.472-6.52,34.464,7.952,44.552l7.848,5.472L224,209.407v-51.576h-28.232
+                                  l52.128-96.232c4.344-8.024,3.808-17.656-1.408-25.144c-5.216-7.488-14.056-11.312-23.088-10.048l-1.456,0.208
+                                  c-17.104,2.44-31.888,12.424-40.544,27.376l-74.008,127.84H56c-30.88,0-56,25.12-56,56v96c0,30.88,25.12,56,56,56h8
+                                  c0,44.112,35.888,80,80,80s80-35.888,80-80h72c0,44.112,35.888,80,80,80s80-35.888,80-80c0-0.784-0.096-1.552-0.12-2.328
+                                  c23.592-6.92,40.12-28.496,40.12-53.672v-128c0-13.232-10.768-24-24-24v-32H496z M250.664,104.967
+                                  c3.104-4.456,8.088-6.84,13.152-6.84c3.16,0,6.344,0.928,9.128,2.864l26.248,18.304c7.232,5.048,9.016,15.04,3.976,22.28
+                                  c-2.448,3.504-6.112,5.848-10.32,6.6c-4.208,0.76-8.456-0.176-11.96-2.624l-26.248-18.296
+                                  C247.4,122.199,245.616,112.207,250.664,104.967z M320,185.831c0-6.616,5.384-12,12-12c6.616,0,12,5.384,12,12v24.928
+                                  c-7.72,4.72-15.744,8.832-24,12.344V185.831z M208,173.831v32h-48v-24c0-4.408,3.592-8,8-8H208z M218.264,221.831l-5.736,12.424
+                                  c-13.472-2.656-26.544-6.864-39.048-12.424H218.264z M195.24,62.007c6.184-10.68,16.744-17.816,28.96-19.552l1.456-0.208
+                                  c3.016-0.416,5.928,0.816,7.688,3.344s1.944,5.664,0.472,8.384l-56.248,103.856H168c-13.232,0-24,10.768-24,24v23.512
+                                  c-5.864-4.032-11.592-8.288-17-13.016l-4.784-4.184L195.24,62.007z M16,237.831h12c11.024,0,20,8.976,20,20
+                                  c0,11.024-8.976,20-20,20H16V237.831z M65.616,373.831H56c-22.056,0-40-17.944-40-40v-8h24c4.408,0,8,3.592,8,8v24h22.728
+                                  C68.496,362.919,66.752,368.263,65.616,373.831z M144,453.831c-35.288,0-64-28.712-64-64c0-35.288,28.712-64,64-64
+                                  s64,28.712,64,64C208,425.119,179.288,453.831,144,453.831z M297.608,373.831h-75.224c-1.136-5.568-2.88-10.912-5.112-16h85.448
+                                  C300.488,362.919,298.744,368.263,297.608,373.831z M376,453.831c-35.288,0-64-28.712-64-64c0-35.288,28.712-64,64-64
+                                  c35.288,0,64,28.712,64,64C440,425.119,411.288,453.831,376,453.831z M480,333.831c0,17.12-10.68,31.92-26.232,37.568
+                                  c-1.112-4.688-2.6-9.232-4.496-13.568H464v-24c0-4.408,3.592-8,8-8h8V333.831z M480,205.831v8h-16v16h16v16h-16v16h16v48h-8
+                                  c-13.232,0-24,10.768-24,24v8h-8v0.2c-14.6-19.496-37.816-32.2-64-32.2c-26.184,0-49.4,12.704-64,32.2v-0.2H208v0.2
+                                  c-14.6-19.496-37.816-32.2-64-32.2s-49.4,12.704-64,32.2v-0.2H64v-8c0-13.232-10.768-24-24-24H16v-16h12
+                                  c19.848,0,36-16.152,36-36c0-19.848-16.152-36-36-36h-8.608c6.192-14.104,20.248-24,36.608-24h52.992l7.472,6.536
+                                  c36.456,31.896,83.208,49.464,131.648,49.464c38.08,0,75.192-10.808,107.336-31.256l38.88-24.744H408h64
+                                  C476.408,197.831,480,201.423,480,205.831z M424,181.831v-32h32v32H424z M408,133.831h-8v-8c0-4.408,3.592-8,8-8h64
+                                  c4.408,0,8,3.592,8,8v8h-8H408z"/>
+                              <rect x="392" y="213.831" width="56" height="16"/>
+                              <rect x="392" y="245.831" width="56" height="16"/>
+                            </g>
+                          </svg>
+                        </div>
+                        <div class="uk-width-expand">
+                          <h3 class="uk-card-title uk-margin-remove-bottom">12:00AM</h3>
+                          <p class="uk-text-meta uk-margin-remove-top">Good night</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="uk-card-body">
+                      <p>Thank you for celebrating with us on this wonderful day.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="uk-container">
+        <hr class="uk-divider-icon">
+      </div>
+      <div class="uk-section" id="registry">
+        <h1 class="uk-text-center uk-heading-primary">Registry</h1>
+        <div class="uk-container">
+          <div class="uk-placeholder uk-text-center">Coming soon</div>
+        </div>
+      </div>
+      <div class="uk-container">
+        <hr class="uk-divider-icon">
+      </div>
+      <div class="uk-section" id="rsvp">
+        <h1 class="uk-text-center uk-heading-primary">RSVP</h1>
+        <div class="uk-container">
+          <div class="uk-placeholder uk-text-center">Coming soon</div>
+        </div>
+      </div>
+      <div class="uk-container">
+        <hr class="uk-divider-icon">
+      </div>
+      <div class="uk-section">
+        <div class="uk-container">
+          <h1 class="uk-heading-primary uk-text-center">Countdown</h1>
+          <div class="uk-grid-small uk-child-width-auto uk-flex-center" uk-grid uk-countdown="date: 2017-12-02T18:00:00-04:00">
+            <div>
+              <div class="uk-countdown-number uk-countdown-days"></div>
+              <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Days</div>
+            </div>
+            <div class="uk-countdown-separator">:</div>
+            <div>
+              <div class="uk-countdown-number uk-countdown-hours"></div>
+              <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Hours</div>
+            </div>
+            <div class="uk-countdown-separator">:</div>
+            <div>
+              <div class="uk-countdown-number uk-countdown-minutes"></div>
+              <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Minutes</div>
+            </div>
+            <div class="uk-countdown-separator">:</div>
+            <div>
+              <div class="uk-countdown-number uk-countdown-seconds"></div>
+              <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Seconds</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="offcanvas-nav" uk-offcanvas="flip: true; overlay: true">
+        <div class="uk-offcanvas-bar">
+          <button class="uk-offcanvas-close" type="button" uk-close></button>
+          <ul class="uk-nav uk-nav-primary uk-nav-center">
+            <li><a href="#venue">Venue</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#Schedule">Schedule</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#registry">Registry</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#rsvp">RSVP</a></li>
+          </ul>
+        </div>
+      </div>
+  </body>
+ </html>

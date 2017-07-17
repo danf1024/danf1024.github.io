@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+
+$primary-green: #003728;
+
+$global-primary-background: $primary-green;
+$navbar-nav-item-height: 50px;
+$heading-hero-font-size: 3rem !default;
+$heading-hero-line-height: 1.1 !default;
+$heading-hero-font-size-s: 5rem !default;
+$heading-hero-line-height-s: 1 !default;
+$heading-hero-font-size-m: 7rem !default;
+$heading-hero-line-height-m: 1 !default;
+$global-font-family: 'Open Sans', sans-serif;
+$offcanvas-bar-background: $primary-green;
+
+@import "../node_modules/uikit/src/scss/variables-theme.scss";
+@import "../node_modules/uikit/src/scss/mixins-theme.scss";
+
+@mixin hook-navbar {
+    z-index: 1;
+    opacity: 0.9;
+    border-bottom: 1px solid #ebebeb;
+}
+
+@import "../node_modules/uikit/src/scss/uikit.scss";
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+}
+
+.hero-container {
+    position: relative;
+    top: 0;
+    right: 0;
+
+    .hero-overlay-top {
+        top: $navbar-nav-item-height;
+    }
+
+    .hero-overlay-bottom {
+        top: initial;
+    }
+}
+
+.timeline-icon svg {
+    width: 50px;
+}
+
+.uk-cover-container {
+    opacity: 0.8;
+    z-index: -1;
+    margin-top: -1 * $navbar-nav-item-height;
+}
+
+.no-overflow {
+    overflow: hidden;
+}
+
