@@ -14,8 +14,8 @@ $heading-hero-line-height-m: 1 !default;
 $global-font-family: 'Open Sans', sans-serif;
 $offcanvas-bar-background: $primary-green;
 
-@import "../node_modules/uikit/src/scss/variables-theme.scss";
-@import "../node_modules/uikit/src/scss/mixins-theme.scss";
+@import "../../node_modules/uikit/src/scss/variables-theme.scss";
+@import "../../node_modules/uikit/src/scss/mixins-theme.scss";
 
 @mixin hook-navbar {
     z-index: 1;
@@ -23,7 +23,7 @@ $offcanvas-bar-background: $primary-green;
     border-bottom: 1px solid #ebebeb;
 }
 
-@import "../node_modules/uikit/src/scss/uikit.scss";
+@import "../../node_modules/uikit/src/scss/uikit.scss";
 
 body {
     min-height: 4500px;
@@ -65,4 +65,3 @@ h1 {
     margin: 0;
     top: 0 !important;
 }
-
