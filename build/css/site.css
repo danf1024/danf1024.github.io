@@ -1413,7 +1413,7 @@ button.uk-icon:not(:disabled) {
 .uk-textarea:focus {
   outline: none;
   background-color: #fff;
-  color: #666;
+  color: #003728;
   border-color: #003728; }
 
 /* Disabled */
@@ -9952,5 +9952,30 @@ h1 {
 .uk-navbar-dropdown {
   margin: 0;
   top: 0 !important; }
+
+.guest-remove-button {
+  padding-left: 10px; }
+
+textarea {
+  resize: none; }
+
+.confirmation-value {
+  margin-top: 10px; }
+
+.checkmark-icon svg {
+  width: 100px;
+  fill: #003728; }
+
+.error-icon svg {
+  width: 100px;
+  fill: #f0506e; }
+
+.rsvp-spinner {
+  position: absolute;
+  top: 10%;
+  left: calc(50% - 15px); }
+
+.rsvp-form-error-label {
+  color: #f0506e; }
 
 /*# sourceMappingURL=site.css.map */
