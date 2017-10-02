@@ -17,6 +17,13 @@ var config = {
         loader: 'babel-loader'
       }
     ]
+  },
+  resolve: {
+    modules: [
+      path.resolve(APP_DIR),
+      path.resolve('./node_modules')
+    ],
+    extensions: ['.js', '.jsx']
   }
 };
 
