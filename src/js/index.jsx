@@ -266,7 +266,7 @@ class ResponseComponent extends React.Component {
               <div className="uk-width-1-2@s">
                 <label className="uk-form-label">
                   <input className="uk-radio" type="radio" value="false" checked={!this.state.rsvp.accepted} onChange={this.handleAccpetedChanged} />
-                  <span className="uk-padding-small">Decline{this.state.rsvp.guests.length == 1 && 's'} with regret</span>
+                  <span className="uk-padding-small">Regretfully decline{this.state.rsvp.guests.length == 1 && 's'}</span>
                 </label>
               </div>
             </div>
@@ -298,7 +298,7 @@ class DeclinedConfirmationComponent extends React.Component {
         <h3 className="uk-text-center">Confirm your response</h3>
         <div className="uk-margin-medium">
           <h4 className="uk-text-center uk-margin-remove-bottom">{this.props.invitation.addressee}</h4>
-          <p className="uk-text-center confirmation-value"><strong>Decline{this.props.invitation.guests.length == 1 && 's'} with regret</strong></p>
+          <p className="uk-text-center confirmation-value"><strong>Regretfully decline{this.props.invitation.guests.length == 1 && 's'}</strong></p>
         </div>
         <p className="uk-text-center">We&#39;re sorry you can&#39;t make it!</p>
         <CommentComponent placeholder="Comments" handleBack={this.props.handleBack} handleSubmit={this.props.handleSubmit} updateComment={this.props.updateComment} />
