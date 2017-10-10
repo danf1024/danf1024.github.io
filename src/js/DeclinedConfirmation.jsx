@@ -2,7 +2,7 @@ import React from 'react';
 
 import Comment from './Comment';
 
-export default class DeclinedConfirmationComponent extends React.Component {
+export default class DeclinedConfirmation extends React.Component {
   constructor (props) {
     super(props);
     this.handleChange = this.handleChange.bind(this);
